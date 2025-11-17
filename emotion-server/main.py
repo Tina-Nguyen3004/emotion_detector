@@ -164,6 +164,10 @@ async def analyze_video(
     frame_interval: int = Form(30),
     db: Session = Depends(get_db)
 ):
+<<<<<<< HEAD
+=======
+    print(frame_interval)
+>>>>>>> 6daa9892a9261d968075769abb94c6247287f4cb
     validate_content_type(
         file,
         [
