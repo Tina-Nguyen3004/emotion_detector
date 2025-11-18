@@ -49,6 +49,7 @@ BACKEND_PID=$!
 # -------------------------
 echo "Starting React frontend..."
 cd ../emotion-client
+npm install
 npm start &
 FRONTEND_PID=$!
 
