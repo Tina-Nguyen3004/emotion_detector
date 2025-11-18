@@ -10,6 +10,9 @@ To start both the FastAPI backend and the React frontend, simply run the provide
 ./run.sh
 ```
 
+Please wait until the script pops up
+`INFO:     Application startup complete.`
+
 This script will:
 1. Create and activate the Python virtual environment (if not already created)
 2. Install all required backend dependencies from requirements.txt
