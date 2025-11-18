@@ -59,4 +59,5 @@ cd ..
 # -------------------------
 # Wait for both processes
 # -------------------------
-wait
+wait $BACKEND_PID
+wait $FRONTEND_PID
