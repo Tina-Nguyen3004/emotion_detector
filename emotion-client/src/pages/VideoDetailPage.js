@@ -12,10 +12,6 @@ function VideoDetailPage() {
   const [deleting, setDeleting] = useState(false);
   const [selectedFrameIndex, setSelectedFrameIndex] = useState(0);
 
-  useEffect(() => {
-    fetchVideoDetails();
-  }, [id]);
-
   const fetchVideoDetails = async () => {
     setLoading(true);
     setErrorMsg("");
@@ -35,6 +31,10 @@ function VideoDetailPage() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchVideoDetails();
+  }, [id]);
 
   const handleDelete = async () => {
     setDeleting(true);

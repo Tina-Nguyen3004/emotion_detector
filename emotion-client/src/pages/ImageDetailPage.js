@@ -11,10 +11,6 @@ function ImageDetailPage() {
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleting, setDeleting] = useState(false);
 
-  useEffect(() => {
-    fetchImageDetails();
-  }, [id]);
-
   const fetchImageDetails = async () => {
     setLoading(true);
     setErrorMsg("");
@@ -34,6 +30,11 @@ function ImageDetailPage() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchImageDetails();
+  }, [id]);
+
 
   const handleDelete = async () => {
     setDeleting(true);
